@@ -1,0 +1,28 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "scripts": {
+    "dev": "bun --hot src/index.tsx",
+    "build": "bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
+    "start": "NODE_ENV=production bun src/index.tsx"
+  },
+  "dependencies": {
+    "@faremeter/fetch": "^0.12.0",
+    "@faremeter/payment-evm": "^0.12.0",
+    "@faremeter/wallet-evm": "^0.12.0",
+    "dotenv": "^17.2.3",
+    "react": "^19",
+    "react-dom": "^19",
+    "viem": "^2.39.0",
+    "x402-fetch": "^0.7.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  }
+}
