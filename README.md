@@ -14,7 +14,6 @@ Provide random word generation as a paid service where access is gated by x402 p
 
 Smart contracts deployed on SKALE Chain that handle random number generation and word selection.
 
-- `SkaleRNG.sol` - Interfaces with SKALE Chain's native RNG
 - `SkaleWordRandom.sol` - Generates random words using SKALE's RNG
 
 ### Application
